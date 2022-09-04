@@ -1,6 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
 
 body {
-  background: #d8d8d8; }
+  background-color: #588b8b; }
+
+a {
+  text-decoration: none;
+  color: #f4f4f4; }
+  a:visted {
+    color: #f4f4f4; }
+  a:hover {
+    background: rgba(242, 143, 59, 0.2);
+    border-radius: 5px; }
+
+li {
+  list-style: none; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.p-1 {
+  padding: 1rem; }
+
+.p-2 {
+  padding: 2rem; }
+
+.p-3 {
+  padding: 3rem; }
+
+#landing {
+  color: #fff;
+  background: #333;
+  position: relative;
+  box-shadow: #333 0px 5px 5px; }
+  #landing:before {
+    content: '';
+    background: url(/dist/assets/landing.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4; }
+  #landing .navbar__container--bar {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: rgba(51, 51, 51, 0.9);
+    color: #f4f4f4; }
+    #landing .navbar__container--bar .navbar__container--logo {
+      font-size: 1.5rem;
+      color: #f4f4f4; }
+    #landing .navbar__container--bar .navbar__container--menu .navbar__menu--items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center; }
+      #landing .navbar__container--bar .navbar__container--menu .navbar__menu--items .navbar__item a {
+        padding: 10px; }
+  #landing .landing__container {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1; }
+    #landing .landing__container .landing__title-container .landing__title {
+      color: #f4f4f4;
+      font-size: 5rem;
+      z-index: 1; }
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  margin: 3rem;
+  border-radius: 10px; }
+  #about .about__container--title {
+    color: #c8553d;
+    font-size: 2rem; }
